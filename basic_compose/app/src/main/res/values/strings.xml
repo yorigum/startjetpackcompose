@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Basic Compose</string>
+    <string name="less">Show less</string>
+    <string name="more">Show more</string>
 </resources>
