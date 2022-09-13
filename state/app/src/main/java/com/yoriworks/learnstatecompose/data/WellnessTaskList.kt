@@ -9,6 +9,7 @@ import com.yoriworks.learnstatecompose.ui.composable.components.WellnessTaskItem
 @Composable
 fun WellnessTaskList(
     list: List<WellnessTask>,
+    onCheckedChange: (WellnessTask,Boolean) -> Unit,
     onCloseTask: (WellnessTask) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -17,7 +18,11 @@ fun WellnessTaskList(
             items = list,
             key = { task -> task.id }
         ) { task ->
-            WellnessTaskItem(taskName = task.label, onClose = { onCloseTask(task) })
+            WellnessTaskItem(
+                taskName = task.label,
+                checked = task.checked,
+                onCheckedChange = {checked -> onCheckedChange(task,checked)},
+                onClose = { onCloseTask(task) })
         }
     }
 }
