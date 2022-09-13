@@ -1,6 +1,7 @@
 package com.yoriworks.learnstatecompose.ui.composable.components
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Button
 import androidx.compose.material.Text
@@ -12,13 +13,28 @@ import androidx.compose.ui.unit.dp
 fun WaterCounter(modifier: Modifier = Modifier) {
     Column(modifier = modifier.padding(16.dp)) {
         var count by remember { mutableStateOf(0) }
-        Text(
-            text = "You've had $count glasses.",
-            modifier = modifier.padding(16.dp)
-        )
-        Button(onClick = { count++ }, Modifier.padding(top = 8.dp)) {
-            Text("Add one")
+        if (count > 0) {
+            var showTask by remember {
+                mutableStateOf(true)
+            }
+            if (showTask) {
+                WellnessTaskItem(taskName = "Have your taken 15 minute walk today?",
+                    onClose = { showTask = false })
+            }
+            Text(
+                text = "You've had $count glasses.",
+                modifier = modifier.padding(16.dp)
+            )
         }
+        Row(Modifier.padding(top=8.dp)) {
+            Button(onClick = { count++ }, enabled = count < 10) {
+                Text("Add one")
+            }
+            Button(onClick = { count = 0 }, Modifier.padding(start = 8.dp), enabled = count < 10) {
+                Text("Clear water count")
+            }
+        }
+
     }
 
 }
