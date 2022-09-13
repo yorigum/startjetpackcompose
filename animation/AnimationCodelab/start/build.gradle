@@ -20,11 +20,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 32
     defaultConfig {
         applicationId 'com.example.android.codelab.animation'
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 32
         versionCode 1
         versionName '1.0'
     }
@@ -62,3 +62,10 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
         ]
     }
 }
+
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+
+tasks.register("prepareKotlinBuildScriptModel"){}
+
