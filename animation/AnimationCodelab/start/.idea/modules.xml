@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1232072008/AnimationCodelab.iml" filepath="$PROJECT_DIR$/.idea/modules/1232072008/AnimationCodelab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1506040487/AnimationCodelab.finished.iml" filepath="$PROJECT_DIR$/.idea/modules/-1506040487/AnimationCodelab.finished.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1506040487/AnimationCodelab.finished.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1506040487/AnimationCodelab.finished.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1506040487/AnimationCodelab.finished.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1506040487/AnimationCodelab.finished.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1506040487/AnimationCodelab.finished.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1506040487/AnimationCodelab.finished.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AnimationCodelab.start.iml" filepath="$PROJECT_DIR$/.idea/modules/AnimationCodelab.start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AnimationCodelab.start.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/AnimationCodelab.start.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AnimationCodelab.start.main.iml" filepath="$PROJECT_DIR$/.idea/modules/AnimationCodelab.start.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AnimationCodelab.start.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/AnimationCodelab.start.unitTest.iml" />
+    </modules>
+  </component>
+</project>
